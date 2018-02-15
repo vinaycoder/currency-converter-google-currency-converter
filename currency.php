@@ -7,6 +7,7 @@ function calculateCurrency($fromCurrency, $toCurrency, $amount) {
 
     $data = explode('bld>', $rawdata);
     $data = explode($toCurrency, $data[1]);
+    return round($data[0],2) ;
 }
 if($_REQUEST['submit'])
 {
